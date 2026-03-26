@@ -1,0 +1,10 @@
+{
+  "appId": "app.capgo.rudderstack.example",
+  "appName": "RudderStack Example",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false
+    }
+  }
+}

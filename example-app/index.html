@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@capgo/capacitor-rudderstack Example</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Capgo plugin example</p>
+        <h1>RudderStack event console</h1>
+        <p class="lead">
+          Initialize the plugin with your RudderStack write key, then send a few analytics calls against the live
+          native bridge.
+        </p>
+      </section>
+
+      <section class="panel">
+        <div class="status-row">
+          <div>
+            <p class="label">SDK state</p>
+            <strong id="status-badge" class="badge">Loading</strong>
+          </div>
+        </div>
+
+        <div class="field-grid">
+          <label class="field">
+            <span class="label">Write key</span>
+            <input id="write-key" type="text" placeholder="YOUR_WRITE_KEY" />
+          </label>
+          <label class="field">
+            <span class="label">Data plane URL</span>
+            <input id="data-plane-url" type="url" placeholder="https://your-dataplane.rudderstack.com" />
+          </label>
+          <label class="field">
+            <span class="label">User id</span>
+            <input id="user-id" type="text" value="user_123" />
+          </label>
+          <label class="field">
+            <span class="label">Event name</span>
+            <input id="event-name" type="text" value="Checkout Started" />
+          </label>
+          <label class="field">
+            <span class="label">Screen name</span>
+            <input id="screen-name" type="text" value="Checkout" />
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="initialize-sdk">Initialize</button>
+          <button id="identify-user" class="ghost">Identify</button>
+          <button id="track-event" class="ghost">Track</button>
+          <button id="screen-event" class="ghost">Screen</button>
+          <button id="flush-events" class="ghost">Flush</button>
+          <button id="reset-user" class="danger">Reset</button>
+          <button id="toggle-opt-out" class="ghost">Toggle opt-out</button>
+          <button id="get-version" class="ghost">Get plugin version</button>
+        </div>
+
+        <pre id="plugin-output">Loading example...</pre>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
