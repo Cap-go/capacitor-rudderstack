@@ -2,11 +2,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "CapgoCapacitorRudderStack",
+    name: "CapgoCapacitorRudderstack",
     platforms: [.iOS(.v15)],
     products: [
         .library(
-            name: "CapgoCapacitorRudderStack",
+            name: "CapgoCapacitorRudderstack",
             targets: ["RudderStackPlugin"])
     ],
     dependencies: [
