@@ -1,3 +1,5 @@
+import { CapacitorUpdater } from '@capgo/capacitor-updater';
+import { Capacitor } from '@capacitor/core';
 import './style.css';
 import { RudderStack } from '@capgo/capacitor-rudderstack';
 
@@ -144,3 +146,9 @@ versionButton.addEventListener('click', async () => {
 
 setStatus(initialized);
 setOutput('Provide a write key and optional data plane URL, then initialize the SDK.');
+
+if (Capacitor.isNativePlatform()) {
+  CapacitorUpdater.notifyAppReady().catch((error) => {
+    console.error('Capgo notifyAppReady failed', error);
+  });
+}
