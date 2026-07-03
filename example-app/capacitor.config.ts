@@ -4,7 +4,7 @@ import pkg from './package.json';
 
 const config: CapacitorConfig = {
   appId: 'app.capgo.rudderstack.example',
-  appName: 'RudderStack Example',
+  appName: '@capgo/capacitor-rudderstack',
   webDir: 'dist',
   plugins: {
     SplashScreen: {
