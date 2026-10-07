@@ -1,10 +1,28 @@
 # @capgo/capacitor-rudderstack
-<a href="https://capgo.app/"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-rudderstack" alt="Capgo - Instant updates for Capacitor" /></a>
+
+Send analytics events and user identities to RudderStack from your Capacitor app with the native RudderStack SDKs. A Capacitor port of rudder-sdk-cordova.
+
+<a href="https://capgo.app/?ref=plugin_rudderstack"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-rudderstack" alt="Capgo - Instant updates for Capacitor" /></a>
 
 <div align="center">
-  <h2><a href="https://capgo.app/?ref=plugin_rudderstack"> ➡️ Get Instant updates for your App with Capgo</a></h2>
-  <h2><a href="https://capgo.app/consulting/?ref=plugin_rudderstack"> Missing a feature? We’ll build the plugin for you 💪</a></h2>
+  <p><b>Capgo</b>: open-source live updates for Ionic and Capacitor apps. Ship OTA fixes and features instantly, without waiting for app store review.</p>
+  <h2><a href="https://capgo.app/register/?ref=plugin_rudderstack">➡️ Get started for free</a></h2>
+  <p>14-day unlimited free trial. No credit card required</p>
+  <p><a href="https://capgo.app/consulting/?ref=plugin_rudderstack">Missing a feature? We'll build the plugin for you 💪</a></p>
 </div>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Cap-go/capacitor-rudderstack/main/assets/github-social-preview.png" alt="@capgo/capacitor-rudderstack for Capacitor apps" width="300" />
+</p>
+
+## Key features
+
+- **Setup**: `initialize()` with your write key and data plane URL.
+- **Tracking**: `track()`, `screen()`, `identify()`, `group()` and `alias()`.
+- **Identity**: `reset()`, `putAnonymousId()`, `putAdvertisingId()` and `putDeviceToken()`.
+- **Privacy and delivery**: `optOut()` and `flush()`.
+- **Easy migration**: follows the Cordova plugin API shape.
+- **Platforms**: iOS and Android. Uses the RudderStack iOS and Android SDKs. Web only accepts the setup call.
 
 Capacitor plugin for RudderStack analytics and event tracking.
 
