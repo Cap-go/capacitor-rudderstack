@@ -22,7 +22,7 @@ Send analytics events and user identities to RudderStack from your Capacitor app
 - **Identity**: `reset()`, `putAnonymousId()`, `putAdvertisingId()` and `putDeviceToken()`.
 - **Privacy and delivery**: `optOut()` and `flush()`.
 - **Easy migration**: follows the Cordova plugin API shape.
-- **Platforms**: iOS and Android. Uses the RudderStack iOS and Android SDKs. Web only accepts the setup call.
+- **Platforms**: iOS and Android. Uses the RudderStack iOS and Android SDKs. Web has API-compatible stubs that do not send events.
 
 Capacitor plugin for RudderStack analytics and event tracking.
 
