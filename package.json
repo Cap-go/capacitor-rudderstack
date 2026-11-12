@@ -1,6 +1,6 @@
 {
   "name": "@capgo/capacitor-rudderstack",
-  "version": "8.1.18",
+  "version": "8.1.19",
   "iosSdkVersion": "2.6.0",
   "androidSdkVersion": "1.27.2",
   "buildNumber": "1",
